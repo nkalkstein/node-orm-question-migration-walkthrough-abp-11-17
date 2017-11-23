@@ -1,17 +1,8 @@
 'use strict';
 
+const db 
 const db = require("../config/db")
-
-class Question{
-
-}
-
-
-module.exports = Question;
-
-
-const db = require("../config/db"
-
+ 
 class Question{
   static CreateTable() {
     return new Promise(function(resolve){
@@ -19,12 +10,12 @@ class Question{
         id INTEGER PRIMARY KEY,
         content TEXT
       )`
-
+ 
       db.run(sql, function(){
         resolve("questions table created")
-      })
+      })      
     })
   }
 }
-
+ 
 module.exports = Question;
